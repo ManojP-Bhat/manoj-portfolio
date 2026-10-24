@@ -1,0 +1,168 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+<title>Manoj P Bhat — Aspiring Software Engineer | Java · Spring Boot · DSA</title>
+<meta name="description" content="Portfolio of Manoj P Bhat, an MCA student in Bengaluru building full-stack projects with Java, Spring Boot, MySQL and React, with a strong DSA foundation.">
+<meta property="og:title" content="Manoj P Bhat — Aspiring Software Engineer">
+<meta property="og:description" content="Java · Spring Boot · Data Structures &amp; Algorithms. Projects, skills and coding profiles.">
+<meta property="og:type" content="website">
+<meta name="twitter:card" content="summary">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Sora:wght@600;700;800&family=Inter:wght@400;500;600&family=JetBrains+Mono:wght@500;600&display=swap" rel="stylesheet">
+<style>
+:root{--bg:#fff;--soft:#f2f8fd;--ink:#122036;--muted:#5c6b82;--deep:#0b3d66;--mid:#2e7cd6;--pale:#e2eefc;--line:#d3e4f7;--ember:#b85c14;--ok:#1f7a54;--card:#fff;color-scheme:light;
+--head:'Sora',system-ui,sans-serif;--body:'Inter',system-ui,sans-serif;--mono:'JetBrains Mono',ui-monospace,monospace;
+box-sizing:border-box;padding-top:env(safe-area-inset-top,0px);padding-bottom:env(safe-area-inset-bottom,0px)}
+@media (prefers-color-scheme:dark){:root:not([data-theme="light"]){--bg:#0b1220;--soft:#0f1a2d;--ink:#e6edf7;--muted:#9fb0c8;--deep:#8cc0ff;--mid:#6fb0ff;--pale:#15263f;--line:#223653;--ember:#f0a060;--ok:#5fd0a0;--card:#101c31;color-scheme:dark}}
+:root[data-theme="dark"]{--bg:#0b1220;--soft:#0f1a2d;--ink:#e6edf7;--muted:#9fb0c8;--deep:#8cc0ff;--mid:#6fb0ff;--pale:#15263f;--line:#223653;--ember:#f0a060;--ok:#5fd0a0;--card:#101c31;color-scheme:dark}
+html{scroll-behavior:smooth;scroll-padding-top:calc(72px + env(safe-area-inset-top,0px))}
+*{box-sizing:border-box;margin:0;padding:0}
+body{font:16px/1.6 var(--body);color:var(--ink);background:var(--bg);-webkit-font-smoothing:antialiased}
+body::before{content:"";position:fixed;inset:0 0 auto;height:env(safe-area-inset-top,0px);background:var(--bg);z-index:10}
+a{color:inherit;text-decoration:none}ul{list-style:none}
+a:focus-visible,button:focus-visible{outline:2.5px solid var(--mid);outline-offset:3px;border-radius:6px}
+.wrap{max-width:1040px;margin:0 auto;padding:0 24px}
+header{position:sticky;top:env(safe-area-inset-top,0px);z-index:11;background:var(--bg);border-bottom:1px solid var(--line)}
+nav{display:flex;align-items:center;justify-content:space-between;gap:16px;height:60px}
+.logo{font:800 17px var(--head);color:var(--deep)}
+.links{display:flex;gap:4px;overflow-x:auto;scrollbar-width:none}
+.links a{padding:8px 11px;border-radius:8px;font-size:14px;font-weight:500;color:var(--muted);white-space:nowrap;transition:.2s}
+.links a:hover{background:var(--pale);color:var(--deep)}
+section{padding:80px 0}.soft{background:var(--soft)}
+.eyebrow{font:600 12px var(--mono);letter-spacing:.08em;text-transform:uppercase;color:var(--mid);margin-bottom:10px}
+h1,h2,h3{font-family:var(--head);line-height:1.2;color:var(--deep)}
+h2{font-size:clamp(26px,4vw,34px);margin-bottom:12px}
+.lead{color:var(--muted);max-width:640px;margin-bottom:32px}
+.hero{padding:72px 0 64px}
+h1{font-size:clamp(34px,6vw,54px);color:var(--ink);margin:6px 0 8px}
+.role{font:600 clamp(16px,2.4vw,20px) var(--head);color:var(--mid);margin-bottom:18px}
+.tag{display:inline-block;font:600 12px var(--mono);color:var(--ember);background:var(--pale);padding:5px 12px;border-radius:99px;margin-bottom:14px}
+.hero p{max-width:620px;color:var(--muted)}
+.btns{display:flex;flex-wrap:wrap;gap:12px;margin:28px 0 22px}
+.btn{padding:12px 22px;border-radius:10px;font-weight:600;font-size:15px;border:1.5px solid var(--deep);transition:.2s}
+.btn.p{background:var(--deep);color:var(--bg)}.btn.p:hover{transform:translateY(-2px)}
+.btn.s{color:var(--deep)}.btn.s:hover{background:var(--pale)}
+.social{display:flex;flex-wrap:wrap;gap:8px 18px;font:500 14px var(--mono)}
+.social a{color:var(--muted);border-bottom:1px dashed var(--line)}.social a:hover{color:var(--mid)}
+.grid{display:grid;gap:18px;grid-template-columns:repeat(auto-fit,minmax(260px,1fr))}
+.card{background:var(--card);border:1px solid var(--line);border-radius:14px;padding:22px;transition:.2s}
+.card:hover{transform:translateY(-3px);box-shadow:0 14px 30px -18px rgba(10,45,77,.45)}
+.card h3{font-size:17px;margin-bottom:12px}
+.chips{display:flex;flex-wrap:wrap;gap:8px}
+.chip{font-size:13.5px;font-weight:500;padding:5px 12px;border-radius:8px;background:var(--pale);color:var(--deep)}
+.chip small{font:600 10.5px var(--mono);margin-left:6px;text-transform:uppercase;color:var(--ok)}
+.chip.l small{color:var(--ember)}
+.legend{font-size:13px;color:var(--muted);margin-top:22px}
+.proj{display:flex;flex-direction:column;gap:12px}
+.proj .top{display:flex;justify-content:space-between;gap:10px;flex-wrap:wrap;align-items:flex-start}
+.kind{font:600 11px var(--mono);color:var(--ember);text-transform:uppercase}
+.proj ul{list-style:disc;padding-left:20px;color:var(--muted);font-size:15px}.proj li{margin-bottom:6px}
+.stack{font:500 12.5px var(--mono);color:var(--mid)}
+.feat{border-left:4px solid var(--ember)}
+.tl{border-left:2px solid var(--line);padding-left:22px;display:grid;gap:22px}
+.tl h3{font-size:17px}.tl .when{font:600 12.5px var(--mono);color:var(--mid)}.tl p{color:var(--muted);font-size:15px}
+.big{display:block;font:700 20px var(--head);color:var(--deep);margin-bottom:4px}
+.card p,.card li{color:var(--muted);font-size:15px}
+.card ul{list-style:disc;padding-left:20px}
+.contact{text-align:center}.contact .btns{justify-content:center}
+footer{padding:28px 0;border-top:1px solid var(--line);color:var(--muted);font-size:14px}
+footer .wrap{display:flex;flex-wrap:wrap;justify-content:space-between;gap:12px}
+footer a:hover{color:var(--mid)}
+@media (max-width:640px){section{padding:56px 0}.wrap{padding:0 18px}.logo{display:none}}
+@media (prefers-reduced-motion:reduce){*{transition:none!important}html{scroll-behavior:auto}}
+</style>
+</head>
+<body>
+<header><div class="wrap"><nav aria-label="Main">
+<a class="logo" href="#home">MPB</a>
+<div class="links"><a href="#about">About</a><a href="#skills">Skills</a><a href="#projects">Projects</a><a href="#education">Education</a><a href="#coding">Coding</a><a href="#certs">Certifications</a><a href="#contact">Contact</a></div>
+</nav></div></header>
+
+<main>
+<section class="hero" id="home"><div class="wrap">
+<span class="tag">Java Developer · Backend Developer · Graduate Software Engineer</span>
+<h1>Manoj P Bhat</h1>
+<div class="role">Aspiring Software Engineer — Java · Spring Boot · Data Structures &amp; Algorithms</div>
+<p>MCA student in Bengaluru, building full-stack applications with Java, Spring Boot, MySQL and React, and practising problem solving every day. I’m looking for Java backend and graduate software engineering roles where I can keep learning on real code.</p>
+<div class="btns"><a class="btn p" href="#projects">View Projects</a><a class="btn s" href="#contact">Contact Me</a></div>
+<div class="social"><a href="https://github.com/ManojP-Bhat" target="_blank" rel="noopener">GitHub</a><a href="https://www.linkedin.com/in/manojpb2004/" target="_blank" rel="noopener">LinkedIn</a><a href="https://leetcode.com/u/Manoj_P_Bhat/" target="_blank" rel="noopener">LeetCode</a><a href="https://takeuforward.org/profile/manoj_p_bhat" target="_blank" rel="noopener">TakeUForward</a><a href="https://www.hackerrank.com/profile/manojbhat488" target="_blank" rel="noopener">HackerRank</a></div>
+</div></section>
+
+<section class="soft" id="about"><div class="wrap">
+<div class="eyebrow">About me</div><h2>Strong foundations, building in public</h2>
+<p class="lead" style="margin-bottom:0">I’m pursuing a Master of Computer Applications at SJB Institute of Technology (VTU) with a CGPA of 8.65. My base is Data Structures &amp; Algorithms, object-oriented programming and Java, including multithreading. I’m now applying it to a full-stack project with Spring Boot, MySQL and React, and I’ve also built a machine learning model for transformer failure prediction. I solve problems daily on LeetCode, HackerRank and TakeUForward, and I use generative AI and prompt engineering to speed up code generation and debugging.</p>
+</div></section>
+
+<section id="skills"><div class="wrap">
+<div class="eyebrow">Technical skills</div><h2>What I work with</h2>
+<p class="lead">Grouped by what I use. Tags show where I honestly stand: <b>Completed</b> learning, <b>Learning</b> in progress, or <b>Project</b> use.</p>
+<div class="grid">
+<div class="card"><h3>Java</h3><div class="chips"><span class="chip">Core Java</span><span class="chip">OOP</span><span class="chip">Collections</span><span class="chip">Stream API</span><span class="chip">Exception Handling</span><span class="chip">Multithreading</span></div></div>
+<div class="card"><h3>Spring Framework</h3><div class="chips"><span class="chip">Spring Core<small>Completed</small></span><span class="chip l">Spring Boot<small>Learning · Project</small></span><span class="chip l">REST APIs &amp; Spring Data JPA<small>In IntelliFlow</small></span></div></div>
+<div class="card"><h3>Backend</h3><div class="chips"><span class="chip">JDBC<small>Project</small></span><span class="chip">Maven</span><span class="chip">Strategy &amp; Template Method patterns<small>Project</small></span></div></div>
+<div class="card"><h3>Databases</h3><div class="chips"><span class="chip">MySQL</span><span class="chip">SQL</span></div></div>
+<div class="card"><h3>Frontend</h3><div class="chips"><span class="chip">HTML5</span><span class="chip">CSS3</span><span class="chip">JavaScript</span><span class="chip">React<small>Project</small></span></div></div>
+<div class="card"><h3>Other languages</h3><div class="chips"><span class="chip">Python</span></div></div>
+<div class="card"><h3>Tools</h3><div class="chips"><span class="chip">Git</span><span class="chip">GitHub</span><span class="chip">IntelliJ IDEA</span><span class="chip">VS Code</span></div></div>
+<div class="card"><h3>DSA &amp; core</h3><div class="chips"><span class="chip">Data Structures &amp; Algorithms</span><span class="chip">Problem Solving</span><span class="chip">Debugging</span><span class="chip">Networking</span></div></div>
+<div class="card"><h3>AI &amp; ML</h3><div class="chips"><span class="chip">AdaBoost</span><span class="chip">Prompt Engineering</span><span class="chip">Generative AI Agents</span></div></div>
+</div></div></section>
+
+<section class="soft" id="projects"><div class="wrap">
+<div class="eyebrow">Projects</div><h2>Things I’ve built</h2>
+<p class="lead">Source links will be added as each repository is made public.</p>
+<div class="grid">
+<article class="card proj feat"><div class="top"><h3>IntelliFlow — AI Code Review &amp; Learning Platform</h3><span class="kind">Full-stack · Building phase</span></div>
+<div class="stack">Java 17 · React · Spring Core · Spring Boot · MySQL</div>
+<ul><li>Reviews Java, Python and C++ code and returns estimated time and space complexity, detected DSA patterns (binary search, two pointers, sliding window, hashing, recursion), issues, suggestions and a score.</li>
+<li>Spring Boot back end designed with Strategy and Template Method patterns: one common language-analyzer interface with three analyzers, so a new language needs only one new class.</li></ul></article>
+<article class="card proj"><div class="top"><h3>Library Management System</h3><span class="kind">Full-stack</span></div>
+<div class="stack">Java · JDBC · MySQL</div>
+<ul><li>Handles book records, issue/return processing, transaction history and user data.</li>
+<li>Relational MySQL schema that replaces manual, paper-based tracking with one central digital system.</li></ul></article>
+<article class="card proj"><div class="top"><h3>Transformer Failure Prediction</h3><span class="kind">Academic</span></div>
+<div class="stack">Python · AdaBoost</div>
+<ul><li>Machine learning model using a dynamic feature-weighted AdaBoost algorithm to forecast localized distribution transformer failures.</li></ul></article>
+</div></div></section>
+
+<section id="education"><div class="wrap">
+<div class="eyebrow">Education &amp; experience</div><h2>Education</h2>
+<div class="tl" style="margin-top:24px">
+<div><span class="when">2025 – Present · 3rd Semester</span><h3>Master of Computer Applications (MCA)</h3><p>SJB Institute of Technology (VTU), Bengaluru · CGPA 8.65</p></div>
+<div><span class="when">Graduated 2025</span><h3>Bachelor of Computer Applications (BCA)</h3><p>Srinivas University · Software Development &amp; Web Design · CGPA 8.12</p></div>
+</div>
+<h2 style="margin-top:48px">Experience</h2>
+<p class="lead" style="margin-bottom:0">I’m a fresher with no professional experience yet. What I can show is the project work above, steady DSA practice and the certifications below.</p>
+</div></section>
+
+<section class="soft" id="coding"><div class="wrap">
+<div class="eyebrow">DSA &amp; coding profiles</div><h2>Daily practice</h2>
+<p class="lead">I follow Striver’s A2Z DSA Sheet on TakeUForward alongside LeetCode and HackerRank. Open the profiles to see the live activity.</p>
+<div class="grid">
+<a class="card" href="https://leetcode.com/u/Manoj_P_Bhat/" target="_blank" rel="noopener"><span class="big">LeetCode →</span><p>Manoj_P_Bhat</p></a>
+<a class="card" href="https://takeuforward.org/profile/manoj_p_bhat" target="_blank" rel="noopener"><span class="big">TakeUForward →</span><p>manoj_p_bhat</p></a>
+<a class="card" href="https://www.hackerrank.com/profile/manojbhat488" target="_blank" rel="noopener"><span class="big">HackerRank →</span><p>manojbhat488</p></a>
+<a class="card" href="https://github.com/ManojP-Bhat" target="_blank" rel="noopener"><span class="big">GitHub →</span><p>ManojP-Bhat</p></a>
+</div></div></section>
+
+<section id="certs"><div class="wrap">
+<div class="eyebrow">Certifications &amp; achievements</div><h2>Credentials</h2>
+<div class="grid" style="margin-top:24px">
+<div class="card"><h3>Certifications</h3><ul><li>HackerRank — Problem Solving</li><li>HackerRank — Java (Basic)</li><li>Coding Ninjas (Code360) — Basics of Java, Part I (Jan 2026) and Part II (Aug 2026)</li></ul></div>
+<div class="card"><h3>Achievements &amp; leadership</h3><ul><li>Consistent DSA practice using Striver’s A2Z sheet and LeetCode; completed the HackerRank Java Introduction track.</li><li>School Captain (2019–2020): led student initiatives and represented the student body.</li></ul></div>
+</div></div></section>
+
+<section class="soft contact" id="contact"><div class="wrap">
+<div class="eyebrow" style="justify-content:center">Contact</div><h2>Let’s talk</h2>
+<p class="lead" style="margin:0 auto 8px">Open to Java backend and graduate software engineering opportunities. Based in Bengaluru, Karnataka, India.</p>
+<div class="btns"><a class="btn p" href="mailto:manojbhat489@gmail.com">manojbhat489@gmail.com</a><a class="btn s" href="tel:+916363679403">+91 63636 79403</a></div>
+<div class="social" style="justify-content:center"><a href="https://www.linkedin.com/in/manojpb2004/" target="_blank" rel="noopener">LinkedIn</a><a href="https://github.com/ManojP-Bhat" target="_blank" rel="noopener">GitHub</a></div>
+</div></section>
+</main>
+
+<footer><div class="wrap"><span>© 2026 Manoj P Bhat</span><span><a href="https://github.com/ManojP-Bhat" target="_blank" rel="noopener">GitHub</a> · <a href="https://www.linkedin.com/in/manojpb2004/" target="_blank" rel="noopener">LinkedIn</a> · <a href="https://leetcode.com/u/Manoj_P_Bhat/" target="_blank" rel="noopener">LeetCode</a></span></div></footer>
+</body>
+</html>
